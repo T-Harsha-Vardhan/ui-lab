@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dadada;
+}
+
+.product-card {
+  background-color: #fcfcfc;
+  width: min(320px, calc(100vw - 32px));
+  height: auto;
+  padding: 16px;
+  border-radius: 32px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.product-img-wrapper {
+  background: #dadada;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.product-img-wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tag-like-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tag-like-container span {
+  background-color: #e7f6ee;
+  color: #2f8f62;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+
+.tag-like-container svg {
+  height: 24px;
+  width: 24px;
+}
+
+.heart-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ff4d4f;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  max-width: 30ch;
+  text-align: start;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.price-wrapper {
+  flex-basis: 40%;
+}
+
+.price-label {
+  color: #8b8b8b;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.price {
+  color: #2f8f62;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.cta-wrapper button {
+  flex-basis: 60%;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  min-height: 48px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.cta-wrapper button:hover {
+  transform: translateY(-2px);
+}
