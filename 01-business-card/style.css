@@ -111,7 +111,7 @@ main {
   margin-bottom: 32px;
 }
 
-.business-card ul li a {
+.social-link {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -127,7 +127,7 @@ main {
     transform 0.2s ease;
 }
 
-.business-card ul li a:hover {
+.social-link:hover {
   background: #ececf0;
   transform: translateY(-2px);
 }
@@ -171,6 +171,11 @@ main {
 .cta-btn:focus-visible {
   outline: 2px solid #2563eb;
   outline-offset: 2px;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  background-color: #111827;
 }
 
 @media (prefers-reduced-motion: reduce) {

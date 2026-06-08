@@ -79,9 +79,16 @@ main {
   border-radius: 16px;
 }
 
+.wishlist-btn {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
 .tag-like-container svg {
   height: 24px;
   width: 24px;
+  cursor: pointer;
 }
 
 .heart-icon {
@@ -139,4 +146,18 @@ main {
 
 .cta-wrapper button:hover {
   transform: translateY(-2px);
+}
+
+.cta-wrapper button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-card,
+  .product-img-wrapper img,
+  .cta-wrapper button {
+    transition: none;
+    transform: none;
+  }
 }
