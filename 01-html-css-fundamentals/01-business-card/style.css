@@ -25,15 +25,16 @@ body {
   width: 100%;
 }
 
-body {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .business-card {
   background-color: #fff;
-  width: min(380px, calc(100vw - 32px));
+  width: min(340px, calc(100vw - 32px));
   padding: 40px;
   border-radius: 32px;
   display: flex;
@@ -57,8 +58,8 @@ body {
 }
 
 .avatar {
-  width: 128px;
-  height: 128px;
+  width: 110px;
+  height: 110px;
   padding: 3px;
   border-radius: 50%;
 
@@ -82,7 +83,6 @@ body {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -0.03em;
-  margin-bottom: 8px;
 }
 
 .business-card .role {
@@ -108,6 +108,7 @@ body {
   list-style-type: none;
   display: flex;
   gap: 8px;
+  margin-bottom: 32px;
 }
 
 .business-card ul li a {
@@ -121,7 +122,9 @@ body {
   align-items: center;
   background: #f5f5f7;
 
-  transition: all 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .business-card ul li a:hover {
@@ -142,6 +145,30 @@ body {
 }
 
 .social-link:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.cta-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #02061f;
+  color: white;
+  min-height: 44px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cta-btn:focus-visible {
   outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
